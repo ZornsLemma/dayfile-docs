@@ -14,6 +14,36 @@ This is almost embarrassingly primitive, which is the whole point. You can use a
 
 The uses are, as they say, limited only by your imagination. Try it and see, feel free to pair it with a more structure app to get the best of both worlds if that works for you.
 
+# Getting started
+
+On first run the app creates some plausible demonstration categories. You are of course free to edit these - use the overflow menu at the top right of the main screen to go to the category editor. The switches on this screen enable and disable categories. Disabling a category is pragmatically very similar to deleting it, but if you really want to fully delete a category you can disable it and then choose the delete option from the category's triple dot menu (which is greyed out for enabled categories to avoid accidents).
+
+The basic use of the app should otherwise be fairly straightforward and you will likely figure it out for yourself. Note that you must use the Settings->Backup option to perform backups at suitable intervals, otherwise you risk losing your notes. The most unusual aspect of the app is the way the history works - this is effectively a very safe if unconventional form of undo. Read on for more details on the various features.
+
+# Main screen
+
+The app's main screen shows the log entries for a specific date, today by default:
+
+<img src="assets/main-screen.png" alt="Main screen showing sample categories and entries" style="max-width: 100%; height: auto;">
+
+You can use the left and right arrows next to the current date to move to the previous or next day respectively. You can also tap on the date to bring up a date selector.
+
+The padlock icon - here shown as "unlocked" - indicates whether you are allowed to edit the displayed entries. The current date defaults to being unlocked, other dates default to being locked. The idea here is to make it hard for you to accidentally edit an entry for any day other than today, e.g. if you browsed back a few days and then put the app into the background before returning. Tapping the padlock icon will toggle it between locked and unlocked - you always have the choice to edit old entries (or future dates, for that matter), the app just doesn't want you to do it without realising. There is no persistent storage of whether a date is locked or not - as soon as you move from one date to another, any manual changes to the lock status are discarded.
+
+Tapping on a category's text entry will allow you to edit it in the normal way, provided the date is not locked.
+
+The triple dot icon at the top right allows you to access the app's menu in the usual way. This allows the category, history and settings screens to be accessed.
+
+If you leave the app briefly (e.g. to check something in another app), it will remember the selected date and protection status when you return. After 10 minutes, re-opening the app will return you to the main screen for today no matter where you were when you left it.
+
+# TODO CATEGORY SCREEN(S)
+
+# TODO HISTORY AKA UNDO
+
+# TODO SETTINGS (INCLUDING BACKUP/RESTORE)
+
+# TODO DAY STARTS AT (MAYBE UNDER SETTINGS)
+
 # Historical note
 
 The original version of this app, called Daily Log, was the first Android app I wrote. In 2012 I got my first Android phone, a second-hand HTC Desire Z *with a physical keyboard*. (Those were the days, my friend!) I couldn't find an app that would let me make notes the way I wanted, so I wrote it. This was probably also my first attempt at writing Java too. I bought an electronic copy of Mark Murphy's ["The Busy Coder's Guide to Android Development"](https://commonsware.com/Android/) and took frequent advantage of his generous offer to get the latest versions for free if you submitted even the most basic corrections (typos, grammar).
@@ -26,7 +56,7 @@ An urge to experiment with LLM-assisted coding after creating [my first modern A
 
 I started using this new app myself daily from September 2026.
 
-The new app contains no code from the original, although the home screen layout is obviously influenced by it. The original app had "Save" and "Cancel" buttons at the bottom of the home screen which caused me intermittent grief over the years as I would fat-finger "Cancel" by mistake, but resuscitating my Android build environment, getting back into the code and confronting all the evolutions in Android tooling and libraries over the year were just too much of a hurdle to stop me resuming development when the app did mostly work fine in practice.
+The new app contains no code from the original, although the main screen layout is obviously influenced by it. The original app had "Save" and "Cancel" buttons at the bottom of the main screen which caused me intermittent grief over the years as I would fat-finger "Cancel" by mistake, but resuscitating my Android build environment, getting back into the code and confronting all the evolutions in Android tooling and libraries over the year were just too much of a hurdle to stop me resuming development when the app did mostly work fine in practice.
 
 I was and still am surprised at how hard it was to find an app like this one. I feel sure there must be dozens which I have somehow overlooked, but whenever I made a diligent effort to look, I struggled to find anything which worked quite how I wanted. It feels like this app (except for the complexity of making the categories user-definable) is so close to "My First Android App" that I can't believe no one has done it before. Maybe it's just too boring to ever get properly polished up and released. Maybe I'm just too picky and every implementation I find just doesn't work quite the right way for me to feel comfortable with. Anyway, here we are.
 
