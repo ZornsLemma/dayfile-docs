@@ -47,15 +47,15 @@ If you leave the app briefly (e.g. to check something in another app), it will r
 
 The app works primarily with dates, not times. By default the day is considered to start at 4am, so if you open the app at 3am on Thursday 1st October 2026 the app will select Wednesday 30th September 2026. If you open the app at 5am on that Thursday, the app will select Thursday. Depending on your own sleep cycle you may want to change this. By setting midnight, the app's idea of dates will align perfectly with the calendar.
 
-This only affects the app's idea of "what day is it today" when it is deciding which date to open the main screen with. All entries are stored against a simple date, so if you type something on the main screen while it shows "Thursday 1st October 2026", those entries will always appear under that date, no matter what the current "Day starts at" setting is or what your current timezone is compared to the timezone when you made the entry. The app is entirely date-oriented and pays no attention to times except that it checks the current local time according to your device to decide whether to apply the day start adjustment.
+This only affects the app's idea of "what day is it today" when it is deciding which date to open the main screen with. All entries are stored against a simple date, so if you type something on the main screen while it shows "Thursday 1st October 2026", those entries will always appear under that date, no matter what the current "Day starts at" setting is or what your current timezone is compared to the timezone when you made the entry.
 
-# Backup/restore
+## Backup/restore
 
 TODO BASE THIS ON MPL
 
 TODO NOTE THAT HISTORY IS NOT BACKED UP, NOR IS IT CLEARED ON RESTORE
 
-# Export data
+## Export data
 
 Tapping "Export data" will allow you to export the entire log to a CSV file, which you can then analyse as you see fit. The "Include BOM in CSV" setting determines whether or not a byte-order mark will be written at the start of the CSV file - Microsoft Excel apparently likes having a BOM, most other tools don't care or prefer not to have one.
 
@@ -63,7 +63,7 @@ At the moment the only export option is whether to include entries for disabled 
 
 There is no way to re-import a CSV file into the app. An exported CSV file serves as a kind of last-resort backup, but not one that can be used to re-populate the app's data after a disaster.
 
-# History retention
+## History retention
 
 As noted elsewhere, the app's history is intended to allow undoing accidental edits, not as a permanent record of how the entries evolved over time. The "Keep history for..." setting allows you to control how long each change is recorded in the history - by default, this is 7 days. 
 
