@@ -12,7 +12,7 @@ There's nothing wrong with more structured note-taking, and there's no shortage 
 
 This is almost embarrassingly primitive, which is the whole point. You can use a text editor to make notes, but you have to make sure you have the right file open, you have to make sure you enter the date correctly, etc. You can use a calendar app but it isn't easy to review the notes after, such apps are naturally organised around making entries for arbitrary future dates and you probably don't want your random "what I did today" notes getting mixed in with your formal appointments. You can use a journalling app, but that might be too heavyweight or prone to inspirational reminders if you just want to write down that you went for a 30 minute walk.
 
-The uses are, as they say, limited only by your imagination. Try it and see, feel free to pair it with a more structure app to get the best of both worlds if that works for you.
+The uses are, as they say, limited only by your imagination. Try it and see, feel free to pair it with a more structured app to get the best of both worlds if that works for you.
 
 # Getting started
 
