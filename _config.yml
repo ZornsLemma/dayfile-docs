@@ -1,0 +1,5 @@
+theme: jekyll-theme-slate
+title: Dayfile
+description: Take notes about your daily life.
+github:
+  repository_url: https://github.com/ZornsLemma/dayfile
