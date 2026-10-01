@@ -22,9 +22,9 @@ The basic use of the app should otherwise be fairly straightforward and you will
 
 # Main screen
 
-The app's main screen shows the log entries for a specific date, today by default:
+The app's main screen shows the log entries for a specific date, today by default: TODO: EXPERIMENT WITH SCALE OF THESE FULL-SCREEN SHOTS
 
-<img src="assets/main-screen.png" alt="Main screen showing sample categories and entries" style="max-width: 100%; height: auto;">
+<img src="assets/main-screen.png" alt="Main screen showing sample categories and entries" style="max-width: 50%; height: auto;">
 
 You can use the left and right arrows next to the current date to move to the previous or next day respectively. You can also tap on the date to bring up a date selector.
 
@@ -50,7 +50,7 @@ The original version of this app, called Daily Log, was the first Android app I 
 
 At the time I thought it would be cool to have an app on the Play Store, probably just for free with no ads. Development stalled when I tried to add a category editor, particularly one which supported dragging categories around, and as the app worked just fine for me with the hard-coded categories I was able to use it myself just fine, but a public release never happened because it was never finished. I used to back up the database periodically with adb, and eventually (around TODO) I fought with a fresh install of whatever the latest Android development environment was to hack in a really crude database export so I could do backups while away from my PC without needing adb.
 
-I used the incomplete app literally daily from June 2012 to January 2025. When the app was written I was using Android 2.x and the "menu" button was alive and well. Over the years, I upgraded but there was usually some practical workaround for no longer having a "menu" button. Eventually I upgraded to a phone where I couldn't seem to get this to work properly, even with third party apps, and I switched to the best available alternative I could find on the Play Store. (I'm grateful to the author, but since I wasn't using the app for what it was designed for - it had a journalling flavour to it - and I therefore found it somewhat annoying in a way that isn't really their fault, I won't name it here.) I used that from January 2025 and had the idea of writing my own modern version of my own app at the back of my mind, if only I could find the time and energy.
+I used the incomplete app literally daily from June 2012 to January 2025. When the app was written I was using Android 2.x and the "menu" button was alive and well. Over the years, I upgraded phones but there was usually some practical workaround for no longer having a "menu" button. Eventually I upgraded to a phone where I couldn't seem to get this to work properly, even with third party apps, and I switched to the best available alternative I could find on the Play Store. (I'm grateful to the author, but since I wasn't using the app for what it was designed for - it had a journalling flavour to it - and I therefore found it somewhat annoying in a way that isn't really their fault, I won't name it here.) I used that from January 2025 and had the idea of writing my own modern version of my own app at the back of my mind, if only I could find the time and energy.
 
 An urge to experiment with LLM-assisted coding after creating [my first modern Android app](https://zornslemma.github.io/my-price-log-docs/) by hand made me start on this app when I otherwise perhaps didn't feel I had the time or inclination. TODO REFDERENCE AI STUFF IN GITHUB README OR PERHAPS WRITE IT HERE??? It was developed under the name Daily Log, even though I had checked and seen that the name was definitely already taken. I can hardly complain after sitting on my original version all that time, can I? I struggled to come up with a new name and did some brainstorming with ChatGPT, eventually ending up with Dayfile. It is a shame not to have retained the original name, but Dayfile is growing on me.
 
