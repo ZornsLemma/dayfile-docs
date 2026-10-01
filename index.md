@@ -68,9 +68,12 @@ There is no way to re-import a CSV file into the app. An exported CSV file serve
 As noted elsewhere, the app's history is intended to allow undoing accidental edits, not as a permanent record of how the entries evolved over time. The "Keep history for..." setting allows you to control how long each change is recorded in the history - by default, this is 7 days. 
 
 Setting this to 0 will cause the history to be cleared when the app is re-entered after 10 minutes in the background, which should give it just enough lifespan to be useful while minimising the privacy impact.
+
+The "Clear all history" option allows the history be explicitly cleared. It will be disabled if there is no history.
+
 The date/time of the change is what matters, not the date of the entry. For example, if you edit an entry for 1st January 1903 on Thursday 1st October 2026, with the default 7 day retention the change is recorded until some time on Thursday 8th October 2026. The record of the change doesn't immediately expire because the date of the entry is over a hundred years in the past.
 
-# Privacy and security considerations TODO: MOVE
+# Privacy and security considerations
 
 The app works entirely offline. Backups are your responsibility, as is protecting access to those backups by anyone you don't want to see them.
 
