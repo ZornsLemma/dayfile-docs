@@ -10,7 +10,7 @@ The idea is that making a note should be as low-friction as possible. You open t
 
 There's nothing wrong with more structured note-taking, and there's no shortage of apps that will help you do it. The emphasis here is on being able to make a quick note with minimal ceremony. The less effort it is to make the note, the more likely it is that you'll invest the time to make it.
 
-This is almost embarrassingly primitive, which is the whole point. You can use a text editor to make notes, but you have to make sure you have the right file open, you have to make sure you enter the date correctly, etc. You can use a calendar app but it isn't easy to review the notes after, such apps are naturally organised around making entries for arbitrary future dates and you probably don't want your random "what I did today" notes getting mixed in with your formal appointments. You can use a journalling app, but that might be too heavyweight or prone to inspirational reminders if you just want to just down that you went for a 30 minute walk.
+This is almost embarrassingly primitive, which is the whole point. You can use a text editor to make notes, but you have to make sure you have the right file open, you have to make sure you enter the date correctly, etc. You can use a calendar app but it isn't easy to review the notes after, such apps are naturally organised around making entries for arbitrary future dates and you probably don't want your random "what I did today" notes getting mixed in with your formal appointments. You can use a journalling app, but that might be too heavyweight or prone to inspirational reminders if you just want to write down that you went for a 30 minute walk.
 
 The uses are, as they say, limited only by your imagination. Try it and see, feel free to pair it with a more structure app to get the best of both worlds if that works for you.
 
@@ -47,7 +47,7 @@ If you leave the app briefly (e.g. to check something in another app), it will r
 
 The app works primarily with dates, not times. By default the day is considered to start at 4am, so if you open the app at 3am on Thursday 1st October 2026 the app will select Wednesday 30th September 2026. If you open the app at 5am on that Thursday, the app will select Thursday. Depending on your own sleep cycle you may want to change this. By setting midnight, the app's idea of dates will align perfectly with the calendar.
 
-This only affects the app's idea of "what day is it today" when it is deciding which date to open the main screen with. All entries are stored against a simple date, so if you type something on the main screen while it shows "Thursday 1st October 2026", those entries will always appear under that date, no matter what the current "Day starts at" setting is or what your current timezone is compared to the timezone when you made the entry.
+This only affects the app's idea of "what day is it today" when it is deciding which date to open the main screen with. All entries are stored against a plain date, so if you type something on the main screen while it shows "Thursday 1st October 2026", those entries will always appear under that date, no matter what the current "Day starts at" setting is or what your current timezone is compared to the timezone when you made the entry.
 
 ## Backup/restore
 
