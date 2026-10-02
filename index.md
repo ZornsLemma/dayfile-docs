@@ -58,7 +58,7 @@ The drag handle at the left of the row allows you to reorder the categories. You
 
 The switch allows a category to be toggled between being enabled and disabled. A disabled category retains all its entries but it is not shown on the main screen until it is re-enabled.
 
-Disabled categories can be deleted using the three-dot menu. Deleting a category deletes all its entries from the main database and cannot be undone, so you will be asked to confirm this before the app goes ahead. (This is also why you can't delete an enabled category; forcing you to disable it first adds an extra bit of friction.) Very recent changes to a deleted category's entries may still be present in the history; see the section on the history screen for more on this.
+Disabled categories can be deleted using the three-dot menu. Deleting a category deletes all its entries from the main database and cannot be undone, so you will be asked to confirm this before the app goes ahead. (This is also why you can't delete an enabled category; forcing you to disable it first adds an extra bit of friction.) Very recent changes to a deleted category's entries may still be present in the history, however, until the expire normally. See the section on the history screen for more on this.
 
 To add a new category, use the "+" button floating at the bottom right of the category list screen. To edit an existing category, use the edit option from the row's three-dot menu.
 
