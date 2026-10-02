@@ -18,7 +18,7 @@ The uses are, as they say, limited only by your imagination. Try it and see, fee
 
 On first run the app creates some plausible demonstration categories. You are of course free to edit these - use the overflow menu at the top right of the main screen to go to the category editor. The switches on this screen enable and disable categories. Disabling a category is pragmatically very similar to deleting it, but if you really want to fully delete a category you can disable it and then choose the delete option from the category's triple dot menu (which is greyed out for enabled categories to avoid accidents).
 
-The basic use of the app should otherwise be fairly straightforward and you will likely figure it out for yourself. Note that you must use the Settings->Backup option to perform backups at suitable intervals, otherwise you risk losing your notes. The most unusual aspect of the app is the way the history works - this is effectively a very safe if unconventional form of undo. Read on for more details on the various features.
+The basic use of the app should otherwise be fairly straightforward and you will likely figure it out for yourself. Note that you must use the Settings->rarr;Backup option to perform backups at suitable intervals, otherwise you risk losing your notes. The most unusual aspect of the app is the way the history works - this is effectively a very safe if unconventional form of undo. Read on for more details on the various features.
 
 # Main screen
 
@@ -92,9 +92,9 @@ This only affects the app's idea of "what day is it today" when it is deciding w
 
 ## Backup/restore
 
-Unless you have some other means of backing up your phone as a whole and have tested it works with this app's data, you are strongly advised to periodically use the Settings->Backup option to export your data to a file *and copy the file off your phone so you don't lose it if your phone is lost, stolen or damaged*.
+Unless you have some other means of backing up your phone as a whole and have tested it works with this app's data, you are strongly advised to periodically use the Settings->rarr;Backup option to export your data to a file *and copy the file off your phone so you don't lose it if your phone is lost, stolen or damaged*.
 
-You can use Settings->Restore to restore a backup created via Settings->Backup. *This will destroy all the data currently held within the app.* The expectation is that if you are restoring a backup, something happened to your phone and you are setting things up fresh with a brand new installation of the app with no real data in yet.
+You can use Settings->rarr;Restore to restore a backup created via Settings->rarr;Backup. *This will destroy all the data currently held within the app.* The expectation is that if you are restoring a backup, something happened to your phone and you are setting things up fresh with a brand new installation of the app with no real data in yet.
 
 The backup includes disabled categories and their entries.
 
