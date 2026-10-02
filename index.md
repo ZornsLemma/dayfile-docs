@@ -73,9 +73,9 @@ The keyboard hints allow you to influence how your phone's keyboard behaves when
 The auto-correct option tells the keyboard whether you want to use auto-correct when editing this category's entries. If you are typing regular words, phrases or sentences auto-correct is likely to be useful. If you are entering things using a personal code or abbreviations, auto-correct may be more of a nuisance than a help. Suppose you record how long your daily walk was. You regularly type "30m walk" in an "Exercise" category and your keyboard has noticed this. One day you go for a longer 35m walk, but when you type "35m" the keyboard helpfully auto-corrects it to "30m" and you have to fight the keyboard's auto-correct to let you record your actual walk correctly. You may not even notice it auto-correcting and accidentally leave an incorrect note. Turning auto-correct off might help avoid this.
 
 The capitalisation option tells the keyboard how you would like automatic capitalisation to be applied for this category's entries:
-* None tells it to leave capitalisation up to you, probably using lower case by default
+* None tells it to leave capitalisation up to you, probably using lower case by default.
 * Sentences tells it to start each sentence (and probably each new line) with a capital.
-* Words tells it to Capitalise Each Word Like This
+* Words tells it to Capitalise Each Word Like This.
 * Characters tells it to capitalise everything, probably using upper case by default.
 
 # History screen
