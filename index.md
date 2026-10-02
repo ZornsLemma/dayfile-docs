@@ -40,9 +40,9 @@ If you leave the app briefly (e.g. to check something in another app), it will r
 
 ## Category list screen
 
-The category screen shows the currently defined categories, in order, and allows you to add, edit, reorder and delete them. It consists of one row per category:
+The category screen shows the currently defined categories, in order, and allows you to add, edit, reorder and delete them. It consists of one row per category: TODO IS 100% OK?
 
-TODO *SINGLE ROW* SCREENSHOT
+<img src="assets/category-list-row.png" alt="Main screen showing sample categories and entries" style="max-width: 100%; height: auto;">
 
 The drag handle at the left of the row allows you to reorder the categories. You can also move them up and down one step at a time using the corresponding options from the triple dot menu at the right of the row.
 
