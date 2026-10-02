@@ -4,7 +4,7 @@
 
 # Overview
 
-This Android app helps you make notes about your daily life. It works entirely offline, so the app doesn't send your notes anywhere. It's your responsibility to back them up so you don't lose them if something happens to your phone.
+This Android app helps you make notes about your daily life. It works entirely offline, so your notes stay o your device, and it's your responsibility to back them up so you don't lose them if something happens to your phone.
 
 The idea is that making a note should be as low-friction as possible. You open the app, you type, you close or background the app. The note is automatically attached to the current date. You can optionally have pre-defined categories to help to split up the day's notes but that's it. Entries are free text with no attempt at imposing a structure beyond the categories. There are no reminders or alarms. There is no formal support for any time tracking more precise than "a day".
 
@@ -113,7 +113,7 @@ The backup does *not* include history, which is temporary by nature anyway. Rest
 The backup file is a SQLite database. You can open it with various tools, including web-based SQLite viewers like [SQLite Viewer Web App](https://sqliteviewer.app). If you have privacy concerns, make sure to use a tool you trust and which will not take a copy of your data.
 
 The app is still new and I suggest you perform additional verification of the backups to be safe:
-* Keep older copies of the backup file, not just the most recent, and verify that the files look plausible as data accumulates.
+* Keep older copies of the backup file, not just the most recent, and verify that the files look plausible as data accumulates. File sizes should generally increase over time as data accumulates.
 * Open the file and see if you can spot recent changes. Open the "entry" table and see if you can see your newest entries.
 
 Although I have not tried to test it myself, I believe that on versions of Android with "Auto Backup for Apps", this app's data may be included in the cloud backup. I have not taken steps to prevent this, since I understand it is opt-in and may be a worthwhile security/privacy trade-off for some people. As this is completely untested, please be very careful before relying on this to keep a useful backup - I strongly suggest you follow the manual backup process described above as well.
@@ -158,7 +158,7 @@ I started using this new app myself daily from September 2026.
 
 The new app contains no code from the original, although the main screen layout is obviously influenced by it. The original app had "Save" and "Cancel" buttons at the bottom of the main screen which caused me intermittent grief over the years as I would fat-finger "Cancel" by mistake, but resuscitating my Android build environment, getting back into the code and confronting all the evolutions in Android tooling and libraries over the year were just too much of a hurdle to stop me resuming development when the app did mostly work fine in practice.
 
-I was and still am surprised at how hard it was to find an app like this one. I feel sure there must be dozens which I have somehow overlooked, but whenever I made a diligent effort to look, I struggled to find anything which worked quite how I wanted. It feels like this app (except for the complexity of making the categories user-definable) is so close to "My First Android App" that I can't believe no one has done it before. Maybe it's just too boring to ever get properly polished up and released. Maybe I'm just too picky and every implementation I find just doesn't work quite the right way for me to feel comfortable with. Anyway, here we are.
+I was and still am surprised at how hard it was to find an app like this one. I feel sure there must be dozens which I have somehow overlooked, but whenever I made a diligent effort to look, I struggled to find anything which worked quite how I wanted. It feels like this app (except for the complexity of making the categories user-definable) is so close to "My First Android App" that I can't believe no one has done it before. Maybe it's just too boring to ever get properly polished up and released. Maybe I'm just too picky. Anyway, here we are.
 
 # Feedback
 
