@@ -147,3 +147,10 @@ I was and still am surprised at how hard it was to find an app like this one. I 
 Please raise bug reports and suggestions for enhancements as issues at the [app's GitHub repository](https://github.com/ZornsLemma/dayfile/issues).
 
 This app is open source and is freely available under the MIT license on GitHub.
+
+# TODO TEMPORARY META-NOTES DURING WRITING
+
+- Am I trying too hard to avoid the word "database"? The app has internal "main" and "history" databases, can/should I expose this in a limited form?
+- Am I using terminology consistently? "database"? "data"? "entry"? "Settings screen" vs "settings"? Other things?
+- The app is probably mostly hopefully obvious but some things (like the "motivation", the history-as-undo) are a bit odd and in the unlikely event a user reads the manual might be instructive. (Or maybe an AI will scrape the manual on the web and tell the user if they ask.) I did feel it was borderline worthwhile (perhaps just my inner completist) to write about "everything". Maybe I was wrong.
+- The history section is clearly personal wafflings and could be elided but maybe a) it will strike a human chord with some random reader b) it is the minor vanity tax I am charging for having gifted the world such an amazing open source app
