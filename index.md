@@ -56,7 +56,7 @@ To add a new category, use the "+" button floating at the bottom right of the ca
 
 The same screen is used to add a new category or edit an existing category:
 
-<img src="assets/category_add_edit_screen.png" alt="Category add/edit screen" style="max-width: 50%; height: auto;">
+<img src="assets/category-add-edit-screen.png" alt="Category add/edit screen" style="max-width: 50%; height: auto;">
 
 The category name is up to you and you can freely rename existing categories without causing any problems. The app will not allow you to have two categories with the same name.
 
@@ -74,13 +74,13 @@ The capitalisation option tells the keyboard how you would like automatic capita
 
 The app tracks the history of changes on the main screen, but only temporarily. (By default changes are recorded for 7 days, but this can be changed under Settings.) This is not intended to provide a useful long-term log of what changed and when. It is intended to provide a comprehensive if somewhat clunky undo feature. The intention is that normally you will completely ignore the existence of history, then when something goes wrong you will be glad it's there and not care that it isn't particularly slick.
 
+<img src="assets/history-screen.png" alt="History screen" style="max-width: 50%; height: auto;">
+
 Imagine you've typed something into the entry for today and it's both important but no longer in your memory. Maybe it's a phone number you're jotting down  - this app isn't the right place for that data long term, but because it is so easy to open the app and type instead of firing up your contacts app and creating a new entry, you might do that anyway. Maybe you just weighed an ingredient in a recipe and noted it down. Just as you finish typing it, you fumble your phone and as you scramble to catch it, your fingers brush the screen and corrupt or delete what you just typed. It's probably gone and you have to type it back in as best you can, assuming you remember. There might be some kind of context menu undo provided, but maybe not, and if there is there is probably a single level of undo and it will likely be gone shortly - you might not even notice you accidentally corrupted the entry for five minutes or an hour, and by then a traditional undo history is long gone.
 
 Although there is some basic filtering to try to keep the noise down, the history in the app is a very noisy but almost complete history of everything you changed. As long as you're within the history retention period (7 days by default), you can browse the history for the day and see every previous version. This isn't friendly, but it does make it possible to recover from fumbles or other accidental edits. You can't edit things on the history screen, but you can select text (long press as usual), copy it to the clipboard and then paste it back into the right place on the main screen. *This is not friendly, but it is powerful*. If - as is usually the case - you aren't making editing mistakes, you can just ignore the existence of the history. When something goes wrong, it's better to have to hunt it out in the history and copy it back to the main screen than to have lost it completely.
 
 The history screen always shows a single day's history, most recent versions first. You can show all categories or filter it to a specific category. You can also see deleted categories and any history for them - once a category is deleted, all of its entries from the main screen are deleted, but the history remains until it expires normally. This provides a limited additional safety net if you do delete a category by accident. (If you really want to get rid of the history, you can clear it explicitly from the settings screen.)
-
-TODO MORE? SCREENSHOT? IF DO INCLUDE A SCREENSHOT, WHERE TO PUT IT? AFTER THE EXPLANATION? AT TOP OF SECTION?
 
 # Settings screen
 
