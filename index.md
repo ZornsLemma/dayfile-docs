@@ -4,7 +4,7 @@
 
 # Overview
 
-This Android app helps you make notes about your daily life. It works entirely offline, so your notes stay o your device, and it's your responsibility to back them up so you don't lose them if something happens to your phone.
+This Android app helps you make notes about your daily life. It works entirely offline, so your notes stay on your device, and it's your responsibility to back them up so you don't lose them if something happens to your phone.
 
 The idea is that making a note should be as low-friction as possible. You open the app, you type, you close or background the app. The note is automatically attached to the current date. You can optionally have pre-defined categories to help to split up the day's notes but that's it. Entries are free text with no attempt at imposing a structure beyond the categories. There are no reminders or alarms. There is no formal support for any time tracking more precise than "a day".
 
@@ -18,15 +18,15 @@ The uses are, as they say, limited only by your imagination. Try it and see, fee
 
 TODO: ChatGPT suggestion - possibly valuable, possibly not. Think about it.
 
-Back up your data. The app does not provide guaranteed recovery if your phone is lost or damaged. Use Settings→Backup and keep a copy somewhere other than the phone.
+*Back up your data.* The app does not provide guaranteed recovery if your phone is lost or damaged. Use Settings→Backup and keep a copy somewhere other than the phone.
 
-History is temporary. The history screen is deliberately a recovery mechanism for accidental edits, not a permanent audit log.
+*History is temporary.* The history screen is deliberately a recovery mechanism for accidental edits, not a permanent record of how your entries changed.
 
-Entries belong to dates, not times. The app is intended for daily notes rather than precise time tracking. You can configure when the app considers a new day to begin.
+*Entries belong to dates, not times.* The app is intended for daily notes rather than precise time tracking. You can configure when the app considers a new day to begin.
 
 # Getting started
 
-On first run the app creates some plausible demonstration categories. You are of course free to edit these - use the overflow menu at the top right of the main screen to go to the category editor. The switches on this screen enable and disable categories. Disabling a category is pragmatically very similar to deleting it, but if you really want to fully delete a category you can disable it and then choose the delete option from the category's three-dot menu (which is greyed out for enabled categories to avoid accidents).
+On first run the app creates some plausible demonstration categories. You are of course free to edit these - use the three-dot menu at the top right of the main screen to go to the category editor. The switches on this screen enable and disable categories. Disabling a category is pragmatically very similar to deleting it, but if you really want to fully delete a category you can disable it and then choose the delete option from the category's three-dot menu (which is greyed out for enabled categories to avoid accidents).
 
 The basic use of the app should otherwise be fairly straightforward and you will likely figure it out for yourself. Note that you must use the Settings→Backup option to perform backups at suitable intervals, otherwise you risk losing your notes. The most unusual aspect of the app is the way the history works - this is effectively a very safe if unconventional form of undo. Read on for more details on the various features.
 
@@ -82,7 +82,7 @@ The capitalisation option tells the keyboard how you would like automatic capita
 
 # History screen
 
-The app tracks the history of changes on the main screen, but only temporarily. (By default changes are recorded for 7 days, but this can be changed under Settings.) This is not intended to provide a useful long-term log of what changed and when. It is intended to provide a comprehensive if somewhat clunky undo feature. The intention is that normally you will completely ignore the existence of history, then when something goes wrong you will be glad it's there and not care that it isn't particularly slick.
+The app temporarily tracks changes to entries on the main screen. (By default changes are recorded for 7 days, but this can be modified under Settings.) This is not intended to provide a useful long-term log of what changed and when. It is intended to provide a comprehensive if somewhat clunky undo feature. The intention is that normally you will completely ignore the existence of history, then when something goes wrong you will be glad it's there and not care that it isn't particularly slick.
 
 <img src="assets/history-screen.png" alt="History screen" style="max-width: 50%; height: auto;">
 
@@ -90,7 +90,7 @@ Imagine you've typed something into the entry for today and it's both important 
 
 Although there is some basic filtering to try to keep the noise down, the history in the app is a very noisy but almost complete history of everything you changed. As long as you're within the history retention period (7 days by default), you can browse the history for the day and see every previous version. This isn't friendly, but it does make it possible to recover from fumbles or other accidental edits. You can't edit things on the history screen, but you can select text (long press as usual), copy it to the clipboard and then paste it back into the right place on the main screen. *This is not friendly, but it is powerful*. If - as is usually the case - you aren't making editing mistakes, you can just ignore the existence of the history. When something goes wrong, it's better to have to hunt it out in the history and copy it back to the main screen than to have lost it completely.
 
-The history screen always shows a single day's history, most recent versions first. You can show all categories or filter it to a specific category. You can also see deleted categories and any history for them - once a category is deleted, all of its entries from the main screen are deleted, but the history remains until it expires normally. This provides a limited additional safety net if you do delete a category by accident. (If you really want to get rid of the history, you can clear it explicitly from the settings screen.)
+The history screen always shows a single day's history, most recent versions first. You can show all categories or filter it to a specific category. You can also see deleted categories and any history for them - once a category is deleted, all of its entries from the main database are deleted, but the history remains until it expires normally. This provides a limited additional safety net if you do delete a category by accident. (If you really want to get rid of the history, you can clear it explicitly from the settings screen.)
 
 # Settings screen
 
@@ -113,7 +113,7 @@ The backup does *not* include history, which is temporary by nature anyway. Rest
 The backup file is a SQLite database. You can open it with various tools, including web-based SQLite viewers like [SQLite Viewer Web App](https://sqliteviewer.app). If you have privacy concerns, make sure to use a tool you trust and which will not take a copy of your data.
 
 The app is still new and I suggest you perform additional verification of the backups to be safe:
-* Keep older copies of the backup file, not just the most recent, and verify that the files look plausible as data accumulates. File sizes should generally increase over time as data accumulates.
+* Keep older copies of the backup file, not just the most recent, and verify that the files look plausible as data accumulates. File sizes should generally increase over time.
 * Open the file and see if you can spot recent changes. Open the "entry" table and see if you can see your newest entries.
 
 Although I have not tried to test it myself, I believe that on versions of Android with "Auto Backup for Apps", this app's data may be included in the cloud backup. I have not taken steps to prevent this, since I understand it is opt-in and may be a worthwhile security/privacy trade-off for some people. As this is completely untested, please be very careful before relying on this to keep a useful backup - I strongly suggest you follow the manual backup process described above as well.
@@ -140,13 +140,13 @@ The date/time of the change is what matters, not the date of the entry. For exam
 
 The app works entirely offline. Backups are your responsibility, as is protecting access to those backups by anyone you don't want to see them.
 
-If you have very stringent privacy or security requirements - for example, you are at risk of a technically sophisticated opponent seizing your device and examining it - you should not be using this app for anything sensitive. The internal sqlite databases may retain data even after it is no longer visible through the app itself. This point applies to all data, but in particular you should not rely on the precise timing of the history wiping, even with a setting of zero days. Even if the app does wipe the history, it may remain internally present in the history database.
+If you have very stringent privacy or security requirements - for example, you are at risk of a technically sophisticated opponent seizing your device and examining it - you should not be using this app for anything sensitive. The internal SQLite databases may retain data even after it is no longer visible through the app itself. This point applies to all data, but in particular you should not rely on the precise timing of the history wiping, even with a setting of zero days. Even if the app does wipe the history, it may remain internally present in the history database.
 
 No encryption is used beyond whatever your device provides itself.
 
 # Historical note
 
-The original version of this app, called Daily Log, was the first Android app I wrote. In 2012 I got my first Android phone, a second-hand HTC Desire Z *with a physical keyboard*. (Those were the days, my friend!) I couldn't find an app that would let me make notes the way I wanted, so I wrote it. This was probably also my first attempt at writing Java too. I bought an electronic copy of Mark Murphy's ["The Busy Coder's Guide to Android Development"](https://commonsware.com/Android/) and took frequent advantage of his generous offer to get the latest versions for free if you submitted even the most basic corrections (typos, grammar).
+The original version of this app, called Daily Log, was the first Android app I wrote. In 2012 I got my first Android phone, a second-hand HTC Desire Z *with a physical keyboard*. (Those were the days, my friend!) I couldn't find an app that would let me make notes the way I wanted, so I wrote it. This was probably also my first attempt at writing Java. I bought an electronic copy of Mark Murphy's ["The Busy Coder's Guide to Android Development"](https://commonsware.com/Android/) and took frequent advantage of his generous offer to get the latest versions for free if you submitted even the most basic corrections (typos, grammar).
 
 At the time I thought it would be cool to have an app on the Play Store, probably just for free with no ads. Development stalled when I tried to add a category editor, particularly one which supported dragging categories around. As the hard-coded categories suited me perfectly I was able to use it just fine, but a public release never happened because it was never finished. I used to back up the database periodically with adb, and eventually (around 2018) I fought with a fresh install of whatever the latest Android development environment was at the time to hack in a really crude database export so I could do backups while away from my PC without needing adb.
 
@@ -156,7 +156,7 @@ An urge to experiment with LLM-assisted coding after creating [my first modern A
 
 I started using this new app myself daily from September 2026.
 
-The new app contains no code from the original, although the main screen layout is obviously influenced by it. The original app had "Save" and "Cancel" buttons at the bottom of the main screen which caused me intermittent grief over the years as I would fat-finger "Cancel" by mistake, but resuscitating my Android build environment, getting back into the code and confronting all the evolutions in Android tooling and libraries over the year were just too much of a hurdle to stop me resuming development when the app did mostly work fine in practice.
+The new app contains no code from the original, although the main screen layout is obviously influenced by it. The original app had "Save" and "Cancel" buttons at the bottom of the main screen which caused me intermittent grief as I would fat-finger "Cancel" by mistake, but resuscitating my Android build environment, getting back into the code and confronting all the evolutions in Android tooling and libraries over the years were just too much of a hurdle to stop me resuming development when the app did mostly work fine in practice.
 
 I was and still am surprised at how hard it was to find an app like this one. I feel sure there must be dozens which I have somehow overlooked, but whenever I made a diligent effort to look, I struggled to find anything which worked quite how I wanted. It feels like this app (except for the complexity of making the categories user-definable) is so close to "My First Android App" that I can't believe no one has done it before. Maybe it's just too boring to ever get properly polished up and released. Maybe I'm just too picky. Anyway, here we are.
 
