@@ -40,9 +40,9 @@ If you leave the app briefly (e.g. to check something in another app), it will r
 
 ## Category list screen
 
-The category screen shows the currently defined categories, in order, and allows you to add, edit, reorder and delete them. It consists of one row per category: TODO IS 100% OK?
+The category screen shows the currently defined categories, in order, and allows you to add, edit, reorder and delete them. It consists of one row per category:
 
-<img src="assets/category-list-row.png" alt="Main screen showing sample categories and entries" style="max-width: 50%; height: auto;">
+<img src="assets/category-list-row.png" alt="Category list screen row" style="max-width: 50%; height: auto;">
 
 The drag handle at the left of the row allows you to reorder the categories. You can also move them up and down one step at a time using the corresponding options from the triple dot menu at the right of the row.
 
@@ -56,7 +56,7 @@ To add a new category, use the "+" button floating at the bottom right of the ca
 
 The same screen is used to add a new category or edit an existing category:
 
-TODO SCREENSHOT?
+<img src="assets/category_add_edit_screen.png" alt="Category add/edit screen" style="max-width: 50%; height: auto;">
 
 The category name is up to you and you can freely rename existing categories without causing any problems. The app will not allow you to have two categories with the same name.
 
