@@ -60,7 +60,7 @@ The same screen is used to add a new category or edit an existing category:
 
 TODO SCREENSHOT?
 
-TODO
+The category name is up to you and you can freely rename existing categories without causing any problems. The app will not allow you to have two categories with the same name.
 
 The keyboard hints allow you to influence how your phone's keyboard behaves when editing entries for this category on the main screen. Ultimately this is controlled by your keyboard, not this app, and different keyboards may behave differently. This app can only tell the keyboard that the user wants a certain behaviour, it can't force the keyboard to obey.
 
@@ -71,8 +71,6 @@ The capitalisation option tells the keyboard how you would like automatic capita
 * Sentences tells it to start each sentence (and probably each new line) with a capital.
 * Words tells it to Capitalise Each Word Like This
 * Characters tells it to capitalise everything, probably using upper case by default.
-
-TODO: DOCUMENT T
 
 # History screen
 
