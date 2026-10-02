@@ -22,7 +22,7 @@ The basic use of the app should otherwise be fairly straightforward and you will
 
 # Main screen
 
-The app's main screen shows the log entries for a specific date, today by default: TODO: EXPERIMENT WITH SCALE OF THESE FULL-SCREEN SHOTS
+The app's main screen shows the log entries for a specific date, today by default:
 
 <img src="assets/main-screen.png" alt="Main screen showing sample categories and entries" style="max-width: 50%; height: auto;">
 
@@ -44,15 +44,13 @@ The category screen shows the currently defined categories, in order, and allows
 
 TODO *SINGLE ROW* SCREENSHOT
 
-The drag handle at the left of the row allows you to reorder the categories. You can also move them up and down one step at a time using the corresponding options from the triple dot memnu at the right of the row.
+The drag handle at the left of the row allows you to reorder the categories. You can also move them up and down one step at a time using the corresponding options from the triple dot menu at the right of the row.
 
 The switch allows a category to be toggled between being enabled and disabled. A disabled category retains all its entries but it is not shown on the home screen until it is re-enabled.
 
 Disabled categories can be deleted using the triple dot menu. Deleting a category deletes all its entries and cannot be undone, so you will be asked to confirm this before the app goes ahead. (This is also why you can't delete an enabled category; forcing you to disable it first adds an extra bit of friction.) Very recent changes to a deleted categories entries may still be present in the history; see the section on the history screen for more on this.
 
 To add a new category, use the "+" button floating at the bottom right of the category screen. To edit an existing category, use the edit option from the row's triple dot menu.
-
-TODO: MORE?!
 
 ## Category add/edit screen
 
@@ -140,7 +138,7 @@ No encryption is used beyond whatever your device provides itself.
 
 The original version of this app, called Daily Log, was the first Android app I wrote. In 2012 I got my first Android phone, a second-hand HTC Desire Z *with a physical keyboard*. (Those were the days, my friend!) I couldn't find an app that would let me make notes the way I wanted, so I wrote it. This was probably also my first attempt at writing Java too. I bought an electronic copy of Mark Murphy's ["The Busy Coder's Guide to Android Development"](https://commonsware.com/Android/) and took frequent advantage of his generous offer to get the latest versions for free if you submitted even the most basic corrections (typos, grammar).
 
-At the time I thought it would be cool to have an app on the Play Store, probably just for free with no ads. Development stalled when I tried to add a category editor, particularly one which supported dragging categories around. As the hard-coded categories suited me perfectly I was able to use it just fine, but a public release never happened because it was never finished. I used to back up the database periodically with adb, and eventually (around TODO) I fought with a fresh install of whatever the latest Android development environment was at the time to hack in a really crude database export so I could do backups while away from my PC without needing adb.
+At the time I thought it would be cool to have an app on the Play Store, probably just for free with no ads. Development stalled when I tried to add a category editor, particularly one which supported dragging categories around. As the hard-coded categories suited me perfectly I was able to use it just fine, but a public release never happened because it was never finished. I used to back up the database periodically with adb, and eventually (around 2018) I fought with a fresh install of whatever the latest Android development environment was at the time to hack in a really crude database export so I could do backups while away from my PC without needing adb.
 
 I used the incomplete app literally daily from June 2012 to January 2025. When the app was written I was using Android 2.x and the "menu" button was alive and well. Over the years, I upgraded phones but there was usually some practical workaround for no longer having a "menu" button. Eventually I upgraded to a phone where I couldn't seem to get this to work properly, even with third party apps, and I switched to the best available alternative I could find on the Play Store. (I'm grateful to the author, but since I wasn't using the app for what it was designed for - it had a journalling flavour to it - and I therefore found it somewhat annoying in a way that isn't really their fault, I won't name it here.) I used that from January 2025 and had the idea of writing my own modern version of my own app at the back of my mind, if only I could find the time and energy.
 
