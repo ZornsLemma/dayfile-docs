@@ -16,8 +16,6 @@ The uses are, as they say, limited only by your imagination. Try it and see, fee
 
 # Three things worth knowing
 
-TODO: ChatGPT suggestion - possibly valuable, possibly not. Think about it.
-
 *Back up your data.* The app does not provide guaranteed recovery if your phone is lost or damaged. Use Settings→Backup and keep a copy somewhere other than the phone.
 
 *History is temporary.* The history screen is deliberately a recovery mechanism for accidental edits, not a permanent record of how your entries changed.
@@ -26,7 +24,7 @@ TODO: ChatGPT suggestion - possibly valuable, possibly not. Think about it.
 
 # Getting started
 
-On first run the app creates some plausible demonstration categories. You are of course free to edit these - use the three-dot menu at the top right of the main screen to go to the category editor. The switches on this screen enable and disable categories. Disabling a category is pragmatically very similar to deleting it, but if you really want to fully delete a category you can disable it and then choose the delete option from the category's three-dot menu (which is greyed out for enabled categories to avoid accidents).
+On first run the app creates some plausible demonstration categories. You are of course free to edit these - use the three-dot menu at the top right of the main screen to go to the category list screen. The switches on this screen enable and disable categories. Disabling a category is pragmatically very similar to deleting it, but if you really want to fully delete a category you can disable it and then choose the delete option from the category's three-dot menu (which is greyed out for enabled categories to avoid accidents).
 
 The basic use of the app should otherwise be fairly straightforward and you will likely figure it out for yourself. Note that you must use the Settings→Backup option to perform backups at suitable intervals, otherwise you risk losing your notes. The most unusual aspect of the app is the way the history works - this is effectively a very safe if unconventional form of undo. Read on for more details on the various features.
 
@@ -42,7 +40,7 @@ The padlock icon - here shown as "unlocked" - indicates whether you are allowed 
 
 Tapping on a category's text entry will allow you to edit it in the normal way, provided the date is not locked.
 
-The three-dot menu at the top right allows you to access the app's menu in the usual way. This allows the category, history and settings screens to be accessed.
+The three-dot menu at the top right provides access to the category, history and settings screens.
 
 If you leave the app briefly (e.g. to check something in another app), it will remember the selected date and protection status when you return. After 10 minutes, re-opening the app will return you to the main screen for today no matter where you were when you left it.
 
@@ -58,7 +56,7 @@ The drag handle at the left of the row allows you to reorder the categories. You
 
 The switch allows a category to be toggled between being enabled and disabled. A disabled category retains all its entries but it is not shown on the main screen until it is re-enabled.
 
-Disabled categories can be deleted using the three-dot menu. Deleting a category deletes all its entries from the main database and cannot be undone, so you will be asked to confirm this before the app goes ahead. (This is also why you can't delete an enabled category; forcing you to disable it first adds an extra bit of friction.) Very recent changes to a deleted category's entries may still be present in the history, however, until the expire normally. See the section on the history screen for more on this.
+Disabled categories can be deleted using the three-dot menu. Deleting a category deletes all its entries from the main database and cannot be undone, so you will be asked to confirm this before the app goes ahead. (This is also why you can't delete an enabled category; forcing you to disable it first adds an extra bit of friction.) Very recent changes to a deleted category's entries may still be present in the history, however, until they expire normally. See the section on the history screen for more on this.
 
 To add a new category, use the "+" button floating at the bottom right of the category list screen. To edit an existing category, use the edit option from the row's three-dot menu.
 
@@ -68,7 +66,7 @@ The same screen is used to add a new category or edit an existing category:
 
 <img src="assets/category-add-edit-screen.png" alt="Category add/edit screen" style="max-width: 50%; height: auto;">
 
-The category name is up to you and you can freely rename existing categories without causing any problems. The app will not allow you to have two categories with the same name.
+You can name the category whatever you like, and you can freely rename existing categories without causing any problems. The app will not allow you to have two categories with the same name.
 
 The keyboard hints allow you to influence how your phone's keyboard behaves when editing entries for this category on the main screen. Ultimately this is controlled by your keyboard, not this app, and different keyboards may behave differently. This app can only tell the keyboard that the user wants a certain behaviour, it can't force the keyboard to obey.
 
@@ -86,7 +84,7 @@ The app temporarily tracks changes to entries on the main screen. (By default ch
 
 <img src="assets/history-screen.png" alt="History screen" style="max-width: 50%; height: auto;">
 
-Imagine you've typed something into the entry for today and it's both important but no longer in your memory. Maybe it's a phone number you're jotting down  - this app isn't the right place for that data long term, but because it is so easy to open the app and type instead of firing up your contacts app and creating a new entry, you might do that anyway. Maybe you just weighed an ingredient in a recipe and noted it down. Just as you finish typing it, you fumble your phone and as you scramble to catch it, your fingers brush the screen and corrupt or delete what you just typed. It's probably gone and you have to type it back in as best you can, assuming you remember. A more conventional context menu undo might help, but it probably has a single level and only lasts until the application is closed - you might not even notice you accidentally corrupted the entry for five minutes or an hour, and by then a traditional undo history is long gone.
+Imagine you've typed something into the entry for today and it's both important but no longer in your memory. Maybe it's a phone number you're jotting down  - this app isn't the right place for that data long term, but because it is so easy to open the app and type instead of firing up your contacts app and creating a new entry, you might do that anyway. Maybe you just weighed an ingredient in a recipe and noted it down. Just as you finish typing it, you fumble your phone and as you scramble to catch it, your fingers brush the screen and corrupt or delete what you just typed. It's probably gone and you have to type it back in as best you can, assuming you remember. A more conventional undo might help, but it might only last until the application is closed or the next edit - you might not even notice you accidentally corrupted the entry for five minutes or an hour, and by then a traditional undo history is long gone.
 
 Although there is some basic filtering to try to keep the noise down, the history in the app is a very noisy but almost complete history of everything you changed. As long as you're within the history retention period (7 days by default), you can browse the history for the day and see every previous version. This isn't friendly, but it does make it possible to recover from fumbles or other accidental edits. You can't edit things on the history screen, but you can select text (long press as usual), copy it to the clipboard and then paste it back into the right place on the main screen. *This is not friendly, but it is powerful*. If - as is usually the case - you aren't making editing mistakes, you can just ignore the existence of the history. When something goes wrong, it's better to have to hunt it out in the history and copy it back to the main screen than to have lost it completely.
 
@@ -112,7 +110,7 @@ The backup does *not* include history, which is temporary by nature anyway. Rest
 
 The backup file is a SQLite database. You can open it with various tools, including web-based SQLite viewers like [SQLite Viewer Web App](https://sqliteviewer.app). If you have privacy concerns, make sure to use a tool you trust and which will not take a copy of your data.
 
-The app is still new and I suggest you perform additional verification of the backups to be safe:
+The app is still new and I suggest you verify your backups to be safe:
 * Keep older copies of the backup file, not just the most recent, and verify that the files look plausible as data accumulates. File sizes should generally increase over time.
 * Open the file and see if you can spot recent changes. Open the "entry" table and see if you can see your newest entries.
 
@@ -165,10 +163,3 @@ I was and still am surprised at how hard it was to find an app like this one. I 
 Please raise bug reports and suggestions for enhancements as issues at the [app's GitHub repository](https://github.com/ZornsLemma/dayfile/issues).
 
 This app is open source and is freely available under the MIT license on GitHub.
-
-# TODO TEMPORARY META-NOTES DURING WRITING
-
-- Am I trying too hard to avoid the word "database"? The app has internal "main" and "history" databases, can/should I expose this in a limited form?
-- Am I using terminology consistently? "database"? "data"? "entry"? "Settings screen" vs "settings"? Other things?
-- The app is probably mostly hopefully obvious but some things (like the "motivation", the history-as-undo) are a bit odd and in the unlikely event a user reads the manual might be instructive. (Or maybe an AI will scrape the manual on the web and tell the user if they ask.) I did feel it was borderline worthwhile (perhaps just my inner completist) to write about "everything". Maybe I was wrong.
-- The history section is clearly personal wafflings and could be elided but maybe a) it will strike a human chord with some random reader b) it is the minor vanity tax I am charging for having gifted the world such an amazing open source app
