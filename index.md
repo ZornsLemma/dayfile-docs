@@ -36,7 +36,7 @@ The triple dot icon at the top right allows you to access the app's menu in the 
 
 If you leave the app briefly (e.g. to check something in another app), it will remember the selected date and protection status when you return. After 10 minutes, re-opening the app will return you to the main screen for today no matter where you were when you left it.
 
-# Categories
+# Category screens
 
 ## Category list screen
 
