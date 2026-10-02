@@ -36,7 +36,43 @@ The triple dot icon at the top right allows you to access the app's menu in the 
 
 If you leave the app briefly (e.g. to check something in another app), it will remember the selected date and protection status when you return. After 10 minutes, re-opening the app will return you to the main screen for today no matter where you were when you left it.
 
-# TODO CATEGORY SCREEN(S)
+# Categories
+
+## Category list screen
+
+The category screen shows the currently defined categories, in order, and allows you to add, edit, reorder and delete them. It consists of one row per category:
+
+TODO *SINGLE ROW* SCREENSHOT
+
+The drag handle at the left of the row allows you to reorder the categories. You can also move them up and down one step at a time using the corresponding options from the triple dot memnu at the right of the row.
+
+The switch allows a category to be toggled between being enabled and disabled. A disabled category retains all its entries but it is not shown on the home screen until it is re-enabled.
+
+Disabled categories can be deleted using the triple dot menu. Deleting a category deletes all its entries and cannot be undone, so you will be asked to confirm this before the app goes ahead. (This is also why you can't delete an enabled category; forcing you to disable it first adds an extra bit of friction.) Very recent changes to a deleted categories entries may still be present in the history; see the section on the history screen for more on this.
+
+To add a new category, use the "+" button floating at the bottom right of the category screen. To edit an existing category, use the edit option from the row's triple dot menu.
+
+TODO: MORE?!
+
+## Category add/edit screen
+
+The same screen is used to add a new category or edit an existing category:
+
+TODO SCREENSHOT?
+
+TODO
+
+The keyboard hints allow you to influence how your phone's keyboard behaves when editing entries for this category on the main screen. Ultimately this is controlled by your keyboard, not this app, and different keyboards may behave differently. This app can only tell the keyboard that the user wants a certain behaviour, it can't force the keyboard to obey.
+
+The auto-correct option tells the keyboard whether you want to use auto-correct when editing this category's entries. If you are typing regular words, phrases or sentences auto-correct is likely to be useful. If you are entering things using a personal code or abbreviations, auto-correct may be more of a nuisance than a help. Suppose you record how long your daily walk was.You regularly type "30m walk" in an "Exercise" category and your keyboard has noticed this. One day you go for a longer 35m walk, but when you type "35m " the keyboard helpfully auto-corrects it to "30m " and you have to fight the keyboard's auto-correct to let you record your actual walk correctly. You may not even notice it auto-correcting and accidentally leave an incorrect note. Turning auto-correct off might help avoid this.
+
+The capitalisation option tells the keyboard how you would like automatic capitalisation to be applied for this category's entries:
+* None tells it to leave capitalisation up to you, probably using lower case by default
+* Sentences tells it to start each sentence (and probably each new line) with a capital.
+* Words tells it to Capitalise Each Word Like This
+* Characters tells it to capitalise everything, probably using upper case by default.
+
+TODO: DOCUMENT T
 
 # History screen
 
@@ -63,6 +99,8 @@ This only affects the app's idea of "what day is it today" when it is deciding w
 TODO BASE THIS ON MPL
 
 TODO NOTE THAT HISTORY IS NOT BACKED UP, NOR IS IT CLEARED ON RESTORE
+
+TODO POINT OUT THAT DISABLED CATEGORIES ARE BACKED UP AN DRESTORED - BEING DISABLED IS ENTIRELY VISUAL 
 
 ## Export data
 
