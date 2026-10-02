@@ -94,11 +94,21 @@ This only affects the app's idea of "what day is it today" when it is deciding w
 
 ## Backup/restore
 
-TODO BASE THIS ON MPL
+Unless you have some other means of backing up your phone as a whole and have tested it works with this app's data, you are strongly advised to periodically use the Settings->Backup option to export your data to a file *and copy the file off your phone so you don't lose it if your phone is lost, stolen or damaged*.
 
-TODO NOTE THAT HISTORY IS NOT BACKED UP, NOR IS IT CLEARED ON RESTORE
+You can use Settings->Restore to restore a backup created via Settings->Backup. *This will destroy all the data currently held within the app.* The expectation is that if you are restoring a backup, something happened to your phone and you are setting things up fresh with a brand new installation of the app with no real data in yet.
 
-TODO POINT OUT THAT DISABLED CATEGORIES ARE BACKED UP AN DRESTORED - BEING DISABLED IS ENTIRELY VISUAL 
+The backup includes disabled categories and their entries.
+
+The backup does *not* include history, which is temporary by nature anyway. Restoring a backujp also does *not* replace the history - this may give strange results if you are restoring a completely unrelated backup, but it offers some possibility of recovering from a mistake if you restore the wrong backup. "Strange" history entries after a restore will eventually disappear as time passes, but you may wish to explicitly clear the history using the settings screen.
+
+The backup file is just a SQLite database. You can open it with various tools, including web-based SQLite viewers like [SQLite Viewer Web App](https://sqliteviewer.app). If you have privacy concerns, make sure to use a tool you trust and which will not take a copy of your data.
+
+The app is still new and I suggest you perform additional verification of the backups to be safe:
+* Keep older copies of the backup file, not just the most recent, and verify that the files are getting larger over time as data accumulates.
+* Open the file and see if you can spot recent changes. Open the "entry" table and see if you can see your newest entries.
+
+Although I have not tried to test it myself, I believe that on versions of Android with "Auto Backup for Apps", this app's data may be included in the cloud backup. I have not taken steps to prevent this, since I understand it is opt-in and may be a worthwhile security/privacy trade-off for some people. As this is completely untested, please be very careful before relying on this to keep a useful backup - I strongly suggest you follow the manual backup process described above as well.
 
 ## Export data
 
