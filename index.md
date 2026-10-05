@@ -1,5 +1,3 @@
-[<img src="assets/badge-f-droid.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/app.zornslemma.dayfile)
-&nbsp;&nbsp;
 [<img src="assets/badge-obtainium.png" alt="Get it on Obtainium" height="80">](https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/ZornsLemma/dayfile/releases)
 
 # Overview
